@@ -4,9 +4,7 @@ Monoclock
 Monoclock is a fast Python module that provides access to the
 monotonic clock on Linux and OS X.
 
-Compatibility: tested on CPython 2.6.5, CPython 2.7, pypy 1.3,
-and pypy 1.4.
-
+Compatibility: Very likely broken on everything except for python 3.9
 
 
 ## Usage

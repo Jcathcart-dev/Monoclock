@@ -1,4 +1,4 @@
-#!/usr/bin/env python
+#!/usr/bin/env python3
 
 import sys
 from distutils.core import setup
@@ -11,7 +11,7 @@ else:
 
 setup(
 	name='Monoclock',
-	version='14.4.18',
+	version='14.4.19',
 	description="Monotonic clock access for Python",
 	url="https://github.com/ludios/Monoclock",
 	author="Ivan Kozik",

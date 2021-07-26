@@ -1,3 +1,4 @@
+#define PY_SSIZE_T_CLEAN
 #include <Python.h>
 #include <time.h>
 
@@ -48,9 +49,15 @@ static PyMethodDef MonoclockMethods[] = {
 	{NULL, NULL, 0, NULL} /* Sentinel */
 };
 
+static struct PyModuleDef MonoClockdef = {
+    PyModuleDef_HEAD_INIT,
+    "MonoClock",   
+    NULL, 
+    -1,       
+    MonoclockMethods
+};
 
-PyMODINIT_FUNC
-initmonoclock(void)
+PyMODINIT_FUNC PyInit_monoclock(void)
 {
-	(void) Py_InitModule("monoclock", MonoclockMethods);
+    return PyModule_Create(&MonoClockdef);
 }
